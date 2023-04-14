@@ -25,3 +25,9 @@ string [] getarray(string [] array,string [] mewarray)
     }
     return newarray;
 }
+
+//Вызываем наш метод
+getarray(array,newarray);
+
+//Выводим новый массив на экран
+System.Console.Write(string.Join(",",newarray));
