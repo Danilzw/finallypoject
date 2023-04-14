@@ -8,3 +8,20 @@ string[] array = new string[4] { "Hello", "-334", "6", "Ok" };
 
 //Массив который будет заполняться индексами длинна которых <= 3
 string[] newarray = new string[array.Length];
+
+// Метод который перебирает элементы массива и вычисляет что элемент <=3 и присваивает значение индекса к новому массиву
+string [] getarray(string [] array,string [] mewarray)
+{
+    int index = 0;
+    int temp = 0;
+    for(int i=0;i<array.Length;i++)
+    {
+        if(array[i].Length <= 3)
+        {
+            newarray[index] = array[i];
+            index = index + 1;
+        }
+
+    }
+    return newarray;
+}
